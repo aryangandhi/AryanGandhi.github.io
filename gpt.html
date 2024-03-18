@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan Gandhi's Portfolio - Skills</title>
+    <style>
+      .skills-body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f7f7f7;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 0;
+      }
+
+      .skills-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .skills-title {
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+
+      /* .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      } */
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(150px, 1fr)
+        ); /* Adjust '150px' based on minimum width you want for each skill item */
+        gap: 20px;
+      }
+
+      .skill-item {
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        background: #eee;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .skill-item:hover {
+        transform: translateY(-5px);
+        background: #e2e2e2;
+      }
+
+      .skill-name {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .skill-level {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .skill-dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 5px;
+        background: #333;
+      }
+
+      .skill-dot.empty {
+        background: transparent;
+        border: 2px solid #333;
+      }
+
+      /* @media (max-width: 768px) {
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      } */
+
+      @media (min-width: 768px) {
+        .skills-grid {
+          grid-template-columns: repeat(
+            5,
+            1fr
+          ); /* 5 items per row on larger screens */
+        }
+      }
+    </style>
+  </head>
+  <body class="skills-body">
+    <div class="skills-container">
+      <h2 class="skills-title">Skills</h2>
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-item">
+          <div class="skill-name">Python</div>
+          <div class="skill-level">
+            <span class="skill-dot"></span><span class="skill-dot"></span
+            ><span class="skill-dot"></span><span class="skill-dot"></span
+            ><span class="skill-dot empty"></span>
+          </div>
+        </div>
+        <!-- Add other programming languages -->
+
+        <!-- Frameworks and Tools -->
+        <div class="skill-item">
+          <div class="skill-name">Git</div>
+          <div class="skill-level">
+            <span class="skill-dot"></span><span class="skill-dot"></span
+            ><span class="skill-dot"></span><span class="skill-dot"></span
+            ><span class="skill-dot empty"></span>
+          </div>
+        </div>
+        <!-- Add other frameworks and tools -->
+
+        <!-- Other Technologies -->
+        <div class="skill-item">
+          <div class="skill-name">Excel</div>
+          <div class="skill-level">
+            <span class="skill-dot"></span><span class="skill-dot"></span
+            ><span class="skill-dot"></span><span class="skill-dot"></span
+            ><span class="skill-dot"></span>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">R</div>
+          <div class="skill-level">
+            <span class="skill-dot"></span><span class="skill-dot"></span
+            ><span class="skill-dot"></span><span class="skill-dot"></span
+            ><span class="skill-dot"></span>
+          </div>
+        </div>
+        <!-- Add other technologies -->
+      </div>
+    </div>
+  </body>
+</html>

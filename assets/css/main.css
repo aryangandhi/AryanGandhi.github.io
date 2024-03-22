@@ -3874,7 +3874,8 @@ body.is-preload #header.alt .logo {
 }
 
 .skills-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
+  max-width: 100%;
   margin-top: 5%;
   background: #fff;
   padding: 20px;
